@@ -28,3 +28,13 @@ data.frame(x = c(1, 2, 3) , y = c(1.5, 5.5, 7.5))
      [,1] [,2] [,3]
 [1,]    3    5    7
 [2,]    4    6    8
+
+> # First Calculations
+> penjualan_q1 <- 20000.75
+> penjualan_q2 <- 35000.21
+> midyear_sales <- penjualan_q1 + penjualan_q2
+> midyear_sales
+[1] 55000.96
+> yearend_sales <- midyear_sales * 2
+> yearend_sales
+[1] 110001.9
