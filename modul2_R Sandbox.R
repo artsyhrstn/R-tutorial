@@ -41,3 +41,7 @@ installed.packages()
 # Packages yang termasuk ke dalam R
   #1. Kode R yang bisa dipakai ulang 2. Tes untuk menggunka 2. dokumentasi untuk menggunakan fungsi 3. contoh dataset
 
+# PACKAGES
+# Tidyverse = Tidyverse adalah kumpulan paket dalam R dengan filosofi desain yang umum. Paket-paket tidyverse sangat berguna untuk manipulasi, eksplorasi, dan visualisasi data.
+tidyverse_update() # Melakukan update pada packages
+update.packages() # Melakukan update untuk semua packages
