@@ -1,0 +1,36 @@
+# Aktivitas Sandbox
+# 1. Menginstall Packages
+install.packages("tidyverse")
+library(tidyverse)
+
+# 2. Melihat data
+  # Memuat dataset diamonds
+head(diamonds)
+
+str(diamonds) # Memuat data secara horizontal
+glimpse(diamonds)
+colnames(diamonds) # Melihat hanya kolumnya saja secara horizontal
+
+# 3. Cleaning Data
+  # Mengganti nama variabel
+rename(diamonds, carat_new = carat)
+# mengganti nama (dataset, nama_baru = nama lama) # hanya di kode yang dijalankan saja
+rename(diamonds, carat_new = carat, cut_new = cut) # hanya di kode yang dijalankan saja
+
+  # Merangkum dataset
+summarize(diamonds, mean_carat = mean(carat))
+# Mencari mean (dataset, var_baru = mean(variabel_dicari_mean))
+
+# 4. Visualisasi Data
+ggplot(data = diamonds, aes(x = carat, y = price)) +
+  geom_point()
+
+ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point()
+
+ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point() +
+  facet_wrap(~cut) # Memisahkan keterdirian komponen
+
+# Documentation
+## Membuat markdown dengan dua tanda pagar
