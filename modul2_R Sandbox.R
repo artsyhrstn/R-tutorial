@@ -37,3 +37,7 @@ ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
 
 # Melihat packages yang sudah terinstall di lokal
 installed.packages()
+
+# Packages yang termasuk ke dalam R
+  #1. Kode R yang bisa dipakai ulang 2. Tes untuk menggunka 2. dokumentasi untuk menggunakan fungsi 3. contoh dataset
+
