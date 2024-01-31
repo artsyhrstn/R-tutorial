@@ -34,3 +34,6 @@ ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
 
 # Documentation
 ## Membuat markdown dengan dua tanda pagar
+
+# Melihat packages yang sudah terinstall di lokal
+installed.packages()
