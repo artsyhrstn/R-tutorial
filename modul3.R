@@ -30,3 +30,10 @@ rank <- c(4, 2, 5, 3, 1)
 fruit_ranks <- data.frame(fruit, rank)
 
 glimpse(fruit)
+
+# 4.1
+premier_league <- c("Chelsea", "Arsenal", "Man City", "Man United", "Liverpool")
+rank <- c(4, 2, 5, 3, 1)
+team_ranks <- data.frame(premier_league, rank)
+
+glimpse(premier_league)
