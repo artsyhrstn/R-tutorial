@@ -42,4 +42,12 @@ penguins %>% arrange(bill_length_mm) # Mengurutkan sesuai dengan bill_length_mm 
 penguins2 <- penguins %>% arrange(-bill_length_mm)
 
 # 2. Group by
-View(penguins2)
+library(tidyverse)
+penguins %>% group_by(island) %>% drop_na() %>% summarize(mean_bill_length_mm = mean(bill_length_mm))
+
+penguins %>% group_by(island) %>% drop_na() %>% summarize(max_bill_length_mm = max(bill_length_mm))
+
+penguins %>% group_by(island, species) %>% drop_na() %>% summarize(max_bl = max(bill_length_mm), mean(bill_length_mm))
+
+# 3. Filter
+penguins %>% filter (species == "Adelie") %>% drop_na() # Hanya menampilkan spesies Adelie
