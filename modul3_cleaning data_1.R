@@ -33,3 +33,13 @@ penguins %>%
 rename_with(penguins,tolower) #toupper / tolower (janitor)
 
 clean_names(penguins) # memastikan hanya karakter, nomor, dan underscore yang berada pada nama kolom
+
+# ORGANIZE DATA
+library(tidyverse)
+penguins %>% arrange(bill_length_mm) # Mengurutkan sesuai dengan bill_length_mm (ascending)(-descending)
+
+# 1. Membuat dataset baru dengan bill length descending
+penguins2 <- penguins %>% arrange(-bill_length_mm)
+
+# 2. Group by
+View(penguins2)
